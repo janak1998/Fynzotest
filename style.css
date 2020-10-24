@@ -26,6 +26,7 @@ label,input,p{
     font-size: 1.8rem;
     margin:.5rem;
     color: #222831;
+    border-radius: 8px;
 }
 
 section{
@@ -39,6 +40,8 @@ textarea{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: .5rem;
+    width: 80vw;
+    border-radius: 8px;
 }
 input[type=button]{
     margin-top: 5px;
@@ -71,7 +74,7 @@ input[type=button]:hover {
 input[type=checkbox] {
     transform: scale(2);
     text-align: center;
-    
+    border-radius: 8px;    
 }
 
 
