@@ -9,6 +9,9 @@ form{
     background-color: #EEEEEE;
     
 }
+a{
+    text-decoration: none;
+}
 h2{
     font-family: 'Roboto', sans-serif;
     font-size: 5em;
@@ -18,8 +21,8 @@ label,input,p{
     display: block;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    margin:.5em;
+    font-size: 1.8rem;
+    margin:.5rem;
 }
 
 section{
@@ -32,9 +35,9 @@ section{
 textarea{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    margin: .5em;
+    margin: .5rem;
 }
-.btn{
+input[type=button]{
     margin-top: 5px;
     background: #00adb5;
     border-radius: 20px;
@@ -49,10 +52,11 @@ textarea{
     text-decoration: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    padding: 1em 1em 1.8em 1em;
+    padding: 1rem 1rem 1.8rem 1rem;
+   
     }
     
-.btn:hover {
+input[type=button]:hover {
     border-radius: 20px;
     text-decoration: none;
     background: #393e46;
@@ -62,4 +66,10 @@ textarea{
 
 .section5 label,.section5 input{
     display: inline;
+}
+
+
+input[type=checkbox] {
+    transform: scale(2);
+    text-align: center;
 }
