@@ -3,13 +3,12 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-form{
-    background-color: #EEEEEE;
-    
+
 }
 
+form{
+    background-color: #EEEEEE;
+}
 a{
     text-decoration: none;
 }
@@ -45,7 +44,7 @@ textarea{
     font-size: 1.8em;
 
 }
-input[type=button]{
+input[type=button],[type=submit]{
     margin-top: 5px;
     background: #00adb5;
     border-radius: 20px;
@@ -66,7 +65,7 @@ input[type=button]{
     
 
 
-input[type=button]:hover {
+input[type=button]:hover , [type=submit]:hover {
     border-radius: 20px;
     text-decoration: none;
     background: #393e46;
@@ -76,7 +75,8 @@ input[type=button]:hover {
 input[type=checkbox] {
     transform: scale(2);
     text-align: center;
-    border-radius: 8px;    
+    border-radius: 8px; 
+   
 }
 
 
