@@ -9,9 +9,7 @@ form{
     background-color: #EEEEEE;
     
 }
-form-group{
-    display: flex;
-}
+
 a{
     text-decoration: none;
 }
@@ -79,4 +77,6 @@ input[type=checkbox] {
     display: inline;
 }
 
-
+.form-group{
+    display: flex;
+}
