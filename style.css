@@ -17,6 +17,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-size: 5em;
     text-align: center;
+    color: #222831;
 }
 label,input,p{
     display: block;
@@ -24,6 +25,7 @@ label,input,p{
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     margin:.5rem;
+    color: #222831;
 }
 
 section{
