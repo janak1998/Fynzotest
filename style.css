@@ -9,6 +9,9 @@ form{
     background-color: #EEEEEE;
     
 }
+form-group{
+    display: flex;
+}
 a{
     text-decoration: none;
 }
@@ -56,6 +59,8 @@ input[type=button]{
    
     }
     
+
+
 input[type=button]:hover {
     border-radius: 20px;
     text-decoration: none;
@@ -63,13 +68,15 @@ input[type=button]:hover {
     border: solid #393e46 1px;
     box-shadow: 1px 1px 6px 0px #00adb5;
 }
+input[type=checkbox] {
+    transform: scale(2);
+    text-align: center;
+    
+}
+
 
 .section5 label,.section5 input{
     display: inline;
 }
 
 
-input[type=checkbox] {
-    transform: scale(2);
-    text-align: center;
-}
