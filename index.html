@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-     
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
 
 <scroll-container>   
-<form action="">
+<form action="" name="form1">
     <section id="sec1">
         <div>
             <h2>Enquiry Form</h2>
         </div>
         <div>
             <a href="#sec2">
-                <input type="button" value="Start">
+                <input type="button" value="Start" >
             </a>
             
         </div>
@@ -26,42 +25,39 @@
     <section id="sec2">
         <div>
             <label for="name">Your Name:</label>
-            <input type="text" id="name">
+            <input type="text" id="name" name="uname" onkeyup="success(2);"  >
         </div>    
         <div>
-            <a href="#sec3">
-                <input type="button" value="Next">
-            </a>
+            
+            <input type="button" id="button2"   value="Next" onclick="nameCheck();" >
         </div>
     </section>
     <section id="sec3">
         <div>
             <label for="dob">Date of Birth:</label>
-            <input type="date">
+            <input type="date" id="date" onchange="success(3);">
         </div>
         <div>
-            <a href="#sec4">
-                <input type="button" value="Next">
-            </a>
+            <input type="button" id="button3" value="Next" onclick="next(4);" >
         </div>
     </section>
     <section id="sec4">
         <div>
-            <label for="dob">Your Achivements:</label>
-            <textarea name="achivements" cols="30" rows="10"></textarea>
+            <label for="achivements">Your Achivements:</label>
+            <textarea name="achivements" cols="30" rows="10" onkeyup="success(4);" ></textarea>
         </div>  
         <div>
-            <a href="#sec5">
-                <input type="button" value="Next">
-            </a>
+            <input type="button" id="button4" value="Next" 
+            onclick="next(5);">     
         </div>  
     </section>
     <section id="sec5">
         <div>
             <p>Family Members:</p>
 
-            <div class="form-group">
-                <input type="checkbox" id="no-one" class="c1">
+            <div class="form-group" onchange="success(5);">
+                <input type="checkbox" id="no-one" class="c1"
+                >
                 <label for="no-one">No one</label>
             </div>
             <div class="form-group">
@@ -86,20 +82,20 @@
             </div>
         </div>
         <div>
-            <a href="#sec6">
-                <input type="button" value="Next">
-            </a>
-        </div>  
-    </section>
+
+            <input type="button" id="button5" value="Next" 
+            >  
+                
+        </div>      
+    </section>  
     <section id="sec6">
         <div>
-          
-                <input type="submit" value="Submit">
+                <input type="submit" id="button" value="Submit" disabled>
         
         </div>
     </section>
 </form>
 </scroll-container>
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
