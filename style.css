@@ -28,9 +28,7 @@ label,input,p{
     color: #222831;
     border-radius: 8px;
 }
-input{
-    text-align: left;
-}
+
 section{
     height: 100vh;
     display: flex;
@@ -88,4 +86,7 @@ input[type=checkbox] {
 
 .form-group{
     display: flex;
+}
+input #name{
+    text-align: left;
 }
