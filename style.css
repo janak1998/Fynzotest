@@ -87,6 +87,6 @@ input[type=checkbox] {
 .form-group{
     display: flex;
 }
-input #name{
+#name{
     text-align: left;
 }
