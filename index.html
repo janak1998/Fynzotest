@@ -6,11 +6,12 @@
     <meta name="description" content="A form made for test my skills by Fynzo, trying to apply for intenship here">
     <title>Fynzo Form</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">   
 </head>
 <body>
 
-<div onchange="submitForm()">   
+<oe="submitForm()">   
 <form action="index.html" name="form1">
     <section id="sec1">
         <div>
@@ -31,11 +32,19 @@
     </section>
     <section id="sec3">
         <div>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" onchange="success(3);">
-        </div>
+            <label for="dob">Date of Birth:</label>
+                <div class="input-icon-wrap">
+                    <span class="input-icon">
+                        <span class="fa fa-calendar"></span>
+                    </span>
+                
+                    <input type="date" id="dob" class="input-with-icon" onchange="success(3);">
+                </div>
+        </div>       
+        
         <div>
-        <input type="button" id="button3" value="Next" onclick="next(4);" >
+            <input type="button" id="button3" value="Next" onclick="next(4);" >
+        
         </div>
     </section>
     <section id="sec4">
