@@ -103,3 +103,17 @@ div > input[type=button]{
 #startbtn{
     display: block;
 }
+#sec6{
+    overflow: hidden!important;
+}
+
+@media screen and (max-width: 400px){
+    label,input,p{
+        font-size: 1.4rem;
+        margin: 0.3rem ;
+        
+    }
+    h2{
+        font-size: 3em;
+    }
+}
