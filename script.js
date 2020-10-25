@@ -2,14 +2,14 @@
 function success(a) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
     var checkedOne = Array.prototype.slice.call(checkboxes).some(x => x.checked);
-    if( checkedOne && a == 5 ){
-        document.getElementById("button"+a).style.display = 'block'; 
+    if( !checkedOne && a == 5 ){
+        document.getElementById("button"+a).style.display = 'none'; 
     }
     else if(a != 5){
         document.getElementById("button"+a).style.display = 'block'; 
     }
     else{
-        document.getElementById("button"+a).style.display = 'none'; 
+        document.getElementById("button"+a).style.display = 'block'; 
     }
 
 
