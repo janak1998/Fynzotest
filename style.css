@@ -120,4 +120,8 @@ div > input[type=button]{
     h2{
         font-size: 3em;
     }
+    textarea{
+        font-size: 1.4rem;
+        
+    }
 }
