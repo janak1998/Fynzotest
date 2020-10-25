@@ -48,7 +48,7 @@ function submitForm(){
     }
     else{
         
-        ocument.getElementById("btnSubmit").disabled = true;
+        document.getElementById("btnSubmit").disabled = true;
         
     }
   

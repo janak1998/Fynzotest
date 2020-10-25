@@ -92,11 +92,43 @@ div > input[type=button]{
     display: none;
 }
 
+.input-icons i { 
+    position: absolute; 
+    margin-left: 10px;
+} 
+  
+.input-icons { 
+    display: flex;
+    width: 100%; 
+    margin-bottom: 10px; 
+    align-items: center;
+} 
+  
+.icon { 
+    padding: 10px; 
+    min-width: 40px; 
+} 
+  
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    padding-left: 35px;
+    text-align: center; 
+} 
+
+
+
+
+.input-with-icon{
+    -moz-appearance: none;
+}
+
+/* Only in firefox because no calender icon in FF */
 @supports (-moz-appearance:none) {
     .input-icon-wrap { 
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: #FFF;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #FFF;
     }
     
     .input-with-icon {
