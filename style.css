@@ -71,7 +71,7 @@ input[type=button]:hover , [type=submit]:hover {
     box-shadow: 1px 1px 6px 0px #00adb5;
 }
 
-input[type=button]:disabled{
+input[type=submit]:disabled{
     background: gray;
     border: none;
     

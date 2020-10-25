@@ -1,4 +1,4 @@
-
+var count;
 function success(a) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
     var checkedOne = Array.prototype.slice.call(checkboxes).some(x => x.checked);
@@ -12,7 +12,7 @@ function success(a) {
         document.getElementById("button"+a).style.display = 'block'; 
     }
 
-
+    count++;
 }
 
 
@@ -36,15 +36,19 @@ function nameCheck(){
 
 function next(num){
     document.getElementById('sec'+num).scrollIntoView({ behavior: 'smooth', block: 'center' });
-    scrollIntoView(false);
+    
         
 }
 
 function submitForm(){
-    var val1 = document.getElementById().value;
-    var val2 = document.getElementById().value;
-    var val3 = document.getElementById().value;
-    var val4 = document.getElementById().value;
-    var val5 = document.getElementById().value;
+    var val1 = document.getElementById("name").value;
+    var bt = document.getElementById('buttonSubmit');
     
+    if (val1 != '') {
+        bt.disabled = false;
+    }
+    else {
+        bt.disabled = true;
+    }
 }
+console.log(count)

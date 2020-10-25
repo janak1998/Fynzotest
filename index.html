@@ -9,88 +9,81 @@
 </head>
 <body>
 
-<scroll-container>   
-<form action="" name="form1">
+<scroll-container >   
+<form action="index.html" name="form1">
     <section id="sec1">
         <div>
-            <h2>Enquiry Form</h2>
+        <h2>Enquiry Form</h2>
         </div>
         <div>
-            
-                <input type="button" id ="startbtn"value="Start" onclick="next(2);">
-            
-            
+        <input type="button" id ="startbtn" value="Start" onclick="next(2);">
         </div>
     </section>
     <section id="sec2">
         <div>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="uname" onkeyup="success(2);"  >
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="uname" onkeyup="success(2);"  >
         </div>    
         <div>
-            
-            <input type="button" id="button2"   value="Next" onclick="nameCheck();" >
+        <input type="button" id="button2"   value="Next" onclick="nameCheck();" >
         </div>
     </section>
     <section id="sec3">
         <div>
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="date" onchange="success(3);">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="date" onchange="success(3);">
         </div>
         <div>
-            <input type="button" id="button3" value="Next" onclick="next(4);" >
+        <input type="button" id="button3" value="Next" onclick="next(4);" >
         </div>
     </section>
     <section id="sec4">
         <div>
-            <label for="achivements">Your Achivements:</label>
-            <textarea name="achivements" cols="30" rows="10" onkeyup="success(4);" ></textarea>
+        <label for="achivements">Your Achivements:</label>
+        <textarea name="achivements" id="txtarea" cols="30" rows="10" onkeyup="success(4);" ></textarea>
         </div>  
         <div>
-            <input type="button" id="button4" value="Next" 
-            onclick="next(5);">     
+        <input type="button" id="button4" value="Next" 
+        onclick="next(5);">     
         </div>  
     </section>
     <section id="sec5">
         <div onchange="success(5);">
-            <p>Family Members:</p>
+        <p>Family Members:</p>
 
-            <div class="form-group" >
-                <input type="checkbox" id="no-one" class="c1"
-                >
-                <label for="no-one">No one</label>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="father">
-                <label for="father">Father</label>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="mother">
-                <label for="mother">Mother</label>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="brother">
-                <label for="brother">Brother</label>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="sister">
-                <label for="sister">Sister</label>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="other">
-                <label for="other">Other</label>
-            </div>
+        <div class="form-group" >
+        <input type="checkbox" id="no-one" class="c1"
+        >
+        <label for="no-one">No one</label>
+        </div>
+        <div class="form-group">
+        <input type="checkbox" id="father">
+        <label for="father">Father</label>
+        </div>
+        <div class="form-group">
+        <input type="checkbox" id="mother">
+        <label for="mother">Mother</label>
+        </div>
+        <div class="form-group">
+        <input type="checkbox" id="brother">
+        <label for="brother">Brother</label>
+        </div>
+        <div class="form-group">
+        <input type="checkbox" id="sister">
+        <label for="sister">Sister</label>
+        </div>
+        <div class="form-group">
+        <input type="checkbox" id="other">
+        <label for="other">Other</label>
+        </div>
         </div>
         <div>
-           
-            <input type="button" id="button5" value="Next" onclick="next(6);" >
-            
-                
+        <input type="button" id="button5" value="Next" onclick="next(6);" >   
         </div>      
     </section>  
     <section id="sec6">
         <div>
-                <input type="submit" id="button" value="Submit" disabled onclick="submitForm()">
+        <input type="submit" id="btnSubmit" value="Submit"  onclick="submitForm()" disabled>
         
         </div>
     </section>
