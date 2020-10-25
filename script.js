@@ -1,3 +1,4 @@
+document.form1.reset();
 var count=0;
 function success(a) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -36,18 +37,18 @@ function nameCheck(){
 
 function next(num){
     document.getElementById('sec'+num).scrollIntoView({ behavior: 'smooth', block: 'center' });
-    
+   
     count++;    
 }
 
 function submitForm(){
     
     if(count >=4){
-        document.getElementById("btnSubmit").disabled = false;
+    document.getElementById("btnSubmit").disabled = false;
     }
     else{
         
-        document.getElementById("btnSubmit").disabled = true;
+        ocument.getElementById("btnSubmit").disabled = true;
         
     }
   
