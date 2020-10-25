@@ -3,14 +3,13 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    overscroll-behavior: none;
 }
 
 form{
     background-color: #EEEEEE;
-}
-a{
-    text-decoration: none;
+    height: 100%;
+    width: auto;
 }
 h2{
     font-family: 'Roboto', sans-serif;
@@ -99,4 +98,7 @@ div > input[type=button]{
 }
 #name{
     text-align: left;
+}
+#startbtn{
+    display: block;
 }
